@@ -420,7 +420,7 @@ img {
     width: 170px;
     height: 92px;
 
-    transition: fill 250ms var(--timing-function);
+    transition: border 250ms var(--timing-function);
 }
 
 .clients-list-item:hover,
@@ -436,6 +436,8 @@ img {
 
 .link-client-icon {
     fill: var(--link-team-icon-color);
+
+    transition: fill 250ms var(--timing-function);
 }
 
 /*-PORTFOLIO-*/
