@@ -782,13 +782,13 @@ img {
     color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form-field:hover .modal-icon,
-.modal-form-field:focus .modal-icon {
+.modal-form-input:hover + .modal-icon,
+.modal-form-input:focus + .modal-icon {
     fill: var(--blue-background-color);
 }
 
-.modal-form-field:hover .modal-form-input,
-.modal-form-field:focus .modal-form-input {
+.modal-form-input:hover,
+.modal-form-input:focus {
     border-color: var(--blue-background-color);
 }
 
@@ -798,13 +798,13 @@ img {
 }
 
 .modal-label {
+    display: inline-block;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
     color: var(--item-text-color);
     margin-bottom: 4px;
-    top: -50%;
 }
 
 .modal-label-comment {
@@ -835,7 +835,6 @@ img {
     left: 15px;
     cursor: pointer;
 
-    transform: translateY(-50%);
     transition: fill 250ms var(--timing-function);
 }
 
